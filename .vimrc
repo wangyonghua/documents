@@ -375,7 +375,9 @@ map <Leader>bl :MBEToggle<CR>
 map <Leader>kl :MBEbn<CR>
 map <Leader>jl :MBEbp<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set hlsearch
+set splitright
+set splitbelow
 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
-
-
+autocmd VimEnter * NERDTree
