@@ -374,10 +374,18 @@ let g:indexer_ctagsCommandLineOptions="--c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v 
 map <Leader>bl :MBEToggle<CR>
 map <Leader>kl :MBEbn<CR>
 map <Leader>jl :MBEbp<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set hlsearch
 set splitright
 set splitbelow
 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
+map <Leader>t :NERDTree<CR>
+map <Leader>q :q<CR>
+map <Leader>q! :q!<CR>
+map <Leader>w :w<CR>
+map <Leader>w! :w!<CR>
+map <Leader>no :nohl<CR>
+nmap <F9> :set nu<CR>
+nmap <F10> :set nonu<CR>
